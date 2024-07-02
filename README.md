@@ -13,7 +13,8 @@ The tip calculator app helps users easily calculate the appropriate tip amount f
 - User-Friendly Interface: Simple and intuitive interface for quick and easy calculations.
 
 ## 📸 Screenshots
-<img scr="https://github.com/FelipeDubiella/tip_Calculator/assets/171951083/61687386-b307-4e56-bd80-3f178552d7f4" width=260/> <img scr="https://github.com/FelipeDubiella/tip_Calculator/assets/171951083/8178f015-abd0-46ab-877e-00c8452ee9bc" width=260/>
+
+<img src="https://github.com/FelipeDubiella/tip_Calculator/assets/171951083/4780c8e4-dfe8-4a6a-82de-73f899913ea6" width=260/> <img src="https://github.com/FelipeDubiella/tip_Calculator/assets/171951083/c5ab68ce-3230-40a1-a1fd-d09b7030c1fb" width=260/>
 
 ## Technologies
 
