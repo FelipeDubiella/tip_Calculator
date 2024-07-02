@@ -26,12 +26,13 @@ class resultActivity : AppCompatActivity() {
                     val percentage = bundle.getFloat("percentage")
                     val split = bundle.getFloat("split")
 
+                    val billResult = totalBill / split
                     val percentageResult = (totalBill / split) * (percentage / 100)
                     val result = totalBill / split + percentageResult
 
                     val decimal = DecimalFormat("#.##")
 
-                    val formattedBill = decimal.format(totalBill)
+                    val formattedBill = decimal.format(billResult)
                     val formattedPercentage = decimal.format(percentageResult)
                     val formattedResult = decimal.format(result)
 
