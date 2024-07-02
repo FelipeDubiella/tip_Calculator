@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         with(binding) {
 
-            btncCalculate.setOnClickListener {
+            btnCalculate.setOnClickListener {
 
                 val totalBill: String = edtTotalBill.text.toString()
                 val percentage: String = edtPercentage.text.toString()
