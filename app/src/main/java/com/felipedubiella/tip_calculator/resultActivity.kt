@@ -1,6 +1,7 @@
 package com.felipedubiella.tip_calculator
 
 import android.content.Intent
+import android.icu.text.DecimalFormat
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -28,9 +29,17 @@ class resultActivity : AppCompatActivity() {
                     val percentageResult = (totalBill / split) * (percentage / 100)
                     val result = totalBill / split + percentageResult
 
-                    tvTotalBill.text = "R$ $totalBill"
-                    tvPercentage.text = "R$ $percentageResult"
-                    tvTotalPerPerson.text = "R$ $result"
+                    val decimal = DecimalFormat("#.##")
+
+                    val formattedBill = decimal.format(totalBill)
+                    val formattedPercentage = decimal.format(percentageResult)
+                    val formattedResult = decimal.format(result)
+
+
+                    tvTotalBill.text = "R$: $formattedBill"
+                    tvPercentage.text = "R$: $formattedPercentage"
+                    tvTotalPerPerson.text = "R$: $formattedResult"
+
 
 
                     btnNewCalculate.setOnClickListener {
