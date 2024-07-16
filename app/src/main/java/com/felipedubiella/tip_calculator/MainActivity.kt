@@ -22,12 +22,21 @@ class MainActivity : AppCompatActivity() {
             btnCalculate.setOnClickListener {
 
                 val totalBill: String = edtTotalBill.text.toString()
-                val percentage: String = edtPercentage.text.toString()
                 val split: String = edtsplit.text.toString()
+                var percentage = 0f
+
+                if (rbOptionOne.isChecked){
+                    percentage = 10f
+                }else if (rbOptionTwo.isChecked){
+                    percentage = 15f
+                }else if (rbOptionThree.isChecked){
+                    percentage = 20f
+                }
+
 
                 val intent = Intent(this@MainActivity, resultActivity::class.java)
 
-                if (totalBill.isNotEmpty() && percentage.isNotEmpty()) {
+                if (totalBill.isNotEmpty() && split.isNotEmpty()) {
                     intent.putExtra("totalBill", totalBill.toFloat())
                     intent.putExtra("percentage", percentage.toFloat())
                     intent.putExtra("split", split.toFloat())

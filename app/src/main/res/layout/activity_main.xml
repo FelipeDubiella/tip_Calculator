@@ -51,32 +51,51 @@
                 android:textStyle="bold" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout2"
+        <RadioGroup
+            android:id="@+id/rgPercente"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="30dp"
-            app:hintEnabled="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtPercentage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_radiogroup"
+            <RadioButton
                 android:fontFamily="@font/aclonica"
-                android:gravity="center_horizontal"
-                android:hint="Tip %"
-                android:inputType="numberDecimal"
-                android:maxLength="3"
-                android:textColorHint="@color/black"
-                android:textStyle="bold" />
+                android:id="@+id/rbOptionOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:background="@drawable/bg_radio_button"
+                android:text="10%"
+                android:textSize="18dp"
+                android:padding="3dp"
+                app:buttonTint="#FBFBFB"/>
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <RadioButton
+                android:fontFamily="@font/aclonica"
+                android:id="@+id/rbOptionTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:background="@drawable/bg_radio_button"
+                android:text="15%"
+                android:textSize="18dp"
+                android:padding="3dp"
+                app:buttonTint="#FBFBFB"/>
+
+            <RadioButton
+                android:id="@+id/rbOptionThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:background="@drawable/bg_radio_button"
+                android:buttonTint="@color/black"
+                android:fontFamily="@font/aclonica"
+                android:text="18%"
+                android:textSize="20dp"
+                android:padding="3dp"
+                app:buttonTint="#FBFBFB"/>
+
+        </RadioGroup>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -88,7 +107,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/rgPercente">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtsplit"
@@ -126,14 +145,33 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/aclonica"
-        android:layout_marginHorizontal="30dp"
         android:gravity="center_horizontal"
         android:text="A tip calculator helps users quickly calculate the tip amount for a service. By entering the bill total and selecting a tip percentage, it provides the tip amount and the total bill including the tip."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
