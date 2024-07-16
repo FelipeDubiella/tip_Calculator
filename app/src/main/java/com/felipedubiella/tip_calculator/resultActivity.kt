@@ -24,7 +24,7 @@ class resultActivity : AppCompatActivity() {
 
                     val totalBill = bundle.getFloat("totalBill")
                     val percentage = bundle.getFloat("percentage")
-                    val split = bundle.getFloat("split")
+                    val split = bundle.getFloat("split", 1f)
 
                     val billResult = totalBill / split
                     val percentageResult = (totalBill / split) * (percentage / 100)
