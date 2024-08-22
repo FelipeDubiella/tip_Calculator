@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(
                         this@MainActivity,
-                        "Fill all the fields to calculate",
+                        getString(R.string.toast_warning),
                         Toast.LENGTH_SHORT
                     ).show()
                 }
