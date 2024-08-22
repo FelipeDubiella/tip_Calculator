@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculado de Gorjeta</string>
+    <string name="enter_bill_total">Insira o total da conta</string>
+    <string name="sumarry_subtitle">Uma calculadora de gorjetas ajuda os usuários a calcular rapidamente o valor da gorjeta para um serviço. Ao inserir o total da conta e selecionar uma porcentagem da gorjeta, ele fornece o valor da gorjeta e o total da conta incluindo a gorjeta.
+</string>
+    <string name="calculate_tip">Calcular Gorjeta</string>
+    <string name="bill">Conta</string>
+    <string name="tip">Gorjeta</string>
+    <string name="total_per_person">Total por Pessoa</string>
+    <string name="new_calculation">Novo Calculo</string>
+    <string name="toast_warning">Preencha todos os campos para calcular</string>
+    <string-array name="num_people">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>

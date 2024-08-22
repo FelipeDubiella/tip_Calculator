@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">tip_Calculator</string>
+    <string name="enter_bill_total">Enter bill total</string>
+    <string name="sumarry_subtitle">A tip calculator helps users quickly calculate the tip amount for a service. By entering the bill total and selecting a tip percentage, it provides the tip amount and the total bill including the tip.</string>
+    <string name="calculate_tip">Calculate Tip</string>
+    <string name="bill">Bill</string>
+    <string name="tip">Tip</string>
+    <string name="total_per_person">Total per Person</string>
+    <string name="new_calculation">New calculation</string>
+    <string name="toast_warning">Fill all the fields to calculate</string>
     <string-array name="num_people">
         <item>0</item>
         <item>1</item>
